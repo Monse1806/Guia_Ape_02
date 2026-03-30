@@ -1,40 +1,9 @@
-/*
- * UNIVERSIDAD TECNICA DE AMBATO
- * FACULTAD: INGENIERIA EN SISTEMAS, ELECTRONICA E INDUSTRIAL
- * CARRERA: Software
- * ASIGNATURA: ESTRUCTURA DE DATOS
- * CICLO ACADEMICO: ENERO 2026 - JULIO 2026
- * TEMA: Gestion de coleccion de datos utilizando listas
- * OBJETIVO: Determinar el calculo de la media de valores estructurados
- *           utilizando programacion orientada a objetos y listas.
- *
- * INTEGRANTE: Estudiante 3
- * RESPONSABILIDAD: Opcion 3 - Determinar el promedio de notas de un estudiante
- *
- * NOTA: Este archivo depende de las definiciones de Estudiante1_Opcion1.cpp
- *       (clase Estudiante, listaEstudiantes, funciones auxiliares).
- *       En el proyecto unificado se incluye todo junto.
- */
-
 #include <iostream>
 #include <string>
 #include <list>
 #include <iomanip>
 
 using namespace std;
-
-// --- Declaraciones externas (definidas por Estudiante 1) ---
-// Se asume que en el proyecto unificado estas ya existen:
-//   class Estudiante { ... list<double> notas; ... calcularEdad(); calcularPromedio(); ... }
-//   list<Estudiante> listaEstudiantes;
-//   list<Estudiante>::iterator buscarEstudiantePorCedula(const string&);
-//   void limpiarPantalla();
-//   void pausar();
-
-// =============================================
-// OPCION 3 - PROMEDIO DE NOTAS DE UN ESTUDIANTE
-// Recorre la list<double> notas mediante iterador
-// =============================================
 void promedioEstudiante() {
     limpiarPantalla();
     cout << "=== PROMEDIO DE NOTAS DE UN ESTUDIANTE ===" << endl;
