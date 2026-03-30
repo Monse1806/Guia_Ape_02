@@ -1,21 +1,3 @@
-/*
- * UNIVERSIDAD TECNICA DE AMBATO
- * FACULTAD: INGENIERIA EN SISTEMAS, ELECTRONICA E INDUSTRIAL
- * CARRERA: Software
- * ASIGNATURA: ESTRUCTURA DE DATOS
- * CICLO ACADEMICO: ENERO 2026 - JULIO 2026
- * TEMA: Gestion de coleccion de datos utilizando listas
- * OBJETIVO: Determinar el calculo de la media de valores estructurados
- *           utilizando programacion orientada a objetos y listas.
- *
- * INTEGRANTE: Estudiante 2
- * RESPONSABILIDAD: Opcion 2 - Registro de calificaciones
- *
- * NOTA: Este archivo depende de las definiciones de Estudiante1_Opcion1.cpp
- *       (clase Estudiante, listaEstudiantes, funciones auxiliares).
- *       En el proyecto unificado se incluye todo junto.
- */
-
 #include <iostream>
 #include <string>
 #include <list>
