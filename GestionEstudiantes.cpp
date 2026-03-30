@@ -1,17 +1,3 @@
-/*
- * UNIVERSIDAD TECNICA DE AMBATO
- * FACULTAD: INGENIERIA EN SISTEMAS, ELECTRONICA E INDUSTRIAL
- * CARRERA: Software
- * ASIGNATURA: ESTRUCTURA DE DATOS
- * CICLO ACADEMICO: ENERO 2026 - JULIO 2026
- * TEMA: Gestion de coleccion de datos utilizando listas
- * OBJETIVO: Determinar el calculo de la media de valores estructurados
- *           utilizando programacion orientada a objetos y listas.
- *
- * INTEGRANTE: Estudiante 1
- * RESPONSABILIDAD: Clase Estudiante, estructuras base y Opcion 1 - Gestion de Estudiantes
- */
-
 #ifndef ESTUDIANTE1_H
 #define ESTUDIANTE1_H
 
@@ -24,16 +10,10 @@
 #include <sstream>
 
 using namespace std;
-
-// =============================================
-// CONSTANTES
-// =============================================
 const int MAX_ESTUDIANTES = 20;
 const int MAX_NOTAS       = 7;
 
-// =============================================
 // FUNCION AUXILIAR: string -> int
-// =============================================
 int strToInt(const string& s) {
     int resultado = 0;
     stringstream ss(s);
@@ -41,17 +21,15 @@ int strToInt(const string& s) {
     return resultado;
 }
 
-// =============================================
 // CLASE Estudiante
 // Usa list<double> para las notas en lugar de arreglo
-// =============================================
 class Estudiante {
 public:
     string        cedula;
     string        nombres;
     string        apellidos;
-    string        fechaNacimiento; // formato DD/MM/AAAA
-    list<double>  notas;           // lista de notas (max MAX_NOTAS)
+    string        fechaNacimiento; 
+    list<double>  notas;         
 
     // Constructor
     Estudiante() {
@@ -98,14 +76,10 @@ public:
     }
 };
 
-// =============================================
 // LISTA GLOBAL DE ESTUDIANTES (en lugar de arreglo)
-// =============================================
 list<Estudiante> listaEstudiantes;
 
-// =============================================
 // FUNCIONES AUXILIARES
-// =============================================
 
 void limpiarPantalla() {
     system("cls");
@@ -167,14 +141,9 @@ double leerNota() {
         }
     }
 }
-
-// =============================================
 // MUESTRA LISTA DE ESTUDIANTES
-// =============================================
 void mostrarListaEstudiantes() {
-    cout << "\n----------------------------------------------------------" << endl;
     cout << "  No. | Cedula     | Nombres          | Apellidos" << endl;
-    cout << "----------------------------------------------------------" << endl;
 
     if (listaEstudiantes.empty()) {
         cout << "  (No hay estudiantes registrados)" << endl;
@@ -188,12 +157,9 @@ void mostrarListaEstudiantes() {
                  << it->apellidos << endl;
         }
     }
-    cout << "----------------------------------------------------------" << endl;
 }
 
-// =============================================
 // OPCION 1 - GESTION DE ESTUDIANTES
-// =============================================
 
 void insertarEstudiante() {
     if ((int)listaEstudiantes.size() >= MAX_ESTUDIANTES) {
