@@ -5,21 +5,6 @@
 #include <sstream>
 
 using namespace std;
-
-// --- Declaraciones externas (definidas por Estudiante 1) ---
-// Se asume que en el proyecto unificado estas ya existen:
-//   class Estudiante { ... list<double> notas; ... }
-//   list<Estudiante> listaEstudiantes;
-//   list<Estudiante>::iterator buscarEstudiantePorCedula(const string&);
-//   double leerNota();
-//   void limpiarPantalla();
-//   void pausar();
-//   const int MAX_NOTAS;
-
-// =============================================
-// OPCION 2 - REGISTRO DE CALIFICACIONES
-// Usa list<double> para manejar las notas
-// =============================================
 void registroCalificaciones() {
     bool seguirBuscando = true;
 
